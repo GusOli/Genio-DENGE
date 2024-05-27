@@ -7,6 +7,7 @@ const quiz = [
     {
         question: "2- Qual é o vetor da dengue?",
         answers: ["Aedes aegypti", "Culex", "Anopheles", "Mansonia"],
+       
         correct: 0
     },
     {

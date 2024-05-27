@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5Ce1e6;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh; /* Define a altura mínima do body como 100% da altura da viewport */
+    margin: 0;
+}
+
+
+.container {
+    background-color: black;
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); /* Ajusta para que o container seja posicionado exatamente no meio da tela */
+}
+
+.questoes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.questao {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.respostas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.proxima-questao-botao {
+    margin-top: 30px;
+    background-color: #ffffff95;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    padding: 10px;
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    transition: filter 0.2s;
+}
+
+.botao{
+    background-color: rgb(113, 113, 113);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    padding: 10px;
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    transition: filter 0.2s;
+}
+
+.botao:hover{
+    filter: brightness(0.8);
+
+}
+
+
+.proxima-questao-botao:hover{
+    filter: brightness(0.8);
+
+}
+
+.right-images {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    animation: moveUpDown 3s infinite;
+}
+
+.right-image {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.left-images {
+    position: absolute;
+    left: 10px;
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+}
+
+.left-images .left-image {
+    display: block;
+    margin-bottom: 20px; /* Espaçamento entre as imagens */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(/img/com\ ponta.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height:12vh;
+}

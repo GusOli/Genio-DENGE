@@ -1,13 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="game.css">
-    <script src="script.js" async></script>
+    <script src="script.js" defer></script> <!-- Mudei de async para defer -->
     <title>Quiz dengue</title>
-    
 </head>
 <body>
 
@@ -23,8 +21,6 @@
         <img src="imagens/mosquito.png" class="right-image" alt="Imagem 4">
     </div>
 
-    
-
     <div class="container">
         <div class="questoes-container">
             <span class="contador"></span>
@@ -37,16 +33,13 @@
             </div>
         </div>
         <div class="controls-container">
-
-
             <div class="score-container" style="display: none;">
                 <h2>Pontuação Final</h2>
                 <p class="final-score"></p>
                 <button class="reiniciar-jogo-botao">Reiniciar Jogo</button>
             </div>
-            
-            
         </div>
     </div>
 </body>
-</html> 
+</html>
+
